@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		12D63F8826C00443008E8EFF /* SwiftCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63F8726C00443008E8EFF /* SwiftCardsApp.swift */; };
-		12D63F8A26C00443008E8EFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63F8926C00443008E8EFF /* ContentView.swift */; };
+		12D63F8A26C00443008E8EFF /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63F8926C00443008E8EFF /* CardListView.swift */; };
 		12D63F8C26C00448008E8EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D63F8B26C00448008E8EFF /* Assets.xcassets */; };
 		12D63F8F26C00448008E8EFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D63F8E26C00448008E8EFF /* Preview Assets.xcassets */; };
 		12D63F9826C00615008E8EFF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 12D63F9726C00615008E8EFF /* FirebaseFirestore */; };
 		12D63F9A26C00615008E8EFF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 12D63F9926C00615008E8EFF /* FirebaseFirestoreSwift-Beta */; };
 		12D63F9C26C00772008E8EFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12D63F9B26C00772008E8EFF /* GoogleService-Info.plist */; };
+		12D63FA226C01A14008E8EFF /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63FA126C01A14008E8EFF /* CardRepository.swift */; };
+		12D63FA426C01AC2008E8EFF /* SwiftCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63FA326C01AC2008E8EFF /* SwiftCard.swift */; };
+		12D63FA626C01E2F008E8EFF /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63FA526C01E2F008E8EFF /* CardListViewModel.swift */; };
+		12D63FA826C0236B008E8EFF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63FA726C0236B008E8EFF /* CardView.swift */; };
+		12D63FAA26C024D6008E8EFF /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63FA926C024D6008E8EFF /* CardViewModel.swift */; };
+		12D63FAC26C04039008E8EFF /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D63FAB26C04039008E8EFF /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12D63F8426C00442008E8EFF /* SwiftCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D63F8726C00443008E8EFF /* SwiftCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCardsApp.swift; sourceTree = "<group>"; };
-		12D63F8926C00443008E8EFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12D63F8926C00443008E8EFF /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		12D63F8B26C00448008E8EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D63F8E26C00448008E8EFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12D63F9026C00448008E8EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12D63F9B26C00772008E8EFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		12D63FA126C01A14008E8EFF /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		12D63FA326C01AC2008E8EFF /* SwiftCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCard.swift; sourceTree = "<group>"; };
+		12D63FA526C01E2F008E8EFF /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		12D63FA726C0236B008E8EFF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		12D63FA926C024D6008E8EFF /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		12D63FAB26C04039008E8EFF /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,11 @@
 		12D63F8626C00442008E8EFF /* SwiftCards */ = {
 			isa = PBXGroup;
 			children = (
+				12D63FA026C019F7008E8EFF /* Repository */,
+				12D63F9F26C019DA008E8EFF /* ViewModels */,
+				12D63F9E26C019D6008E8EFF /* Models */,
 				12D63F8726C00443008E8EFF /* SwiftCardsApp.swift */,
-				12D63F8926C00443008E8EFF /* ContentView.swift */,
+				12D63F9D26C019C9008E8EFF /* Views */,
 				12D63F8B26C00448008E8EFF /* Assets.xcassets */,
 				12D63F9026C00448008E8EFF /* Info.plist */,
 				12D63F9B26C00772008E8EFF /* GoogleService-Info.plist */,
@@ -74,6 +89,41 @@
 				12D63F8E26C00448008E8EFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12D63F9D26C019C9008E8EFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12D63F8926C00443008E8EFF /* CardListView.swift */,
+				12D63FA726C0236B008E8EFF /* CardView.swift */,
+				12D63FAB26C04039008E8EFF /* FormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12D63F9E26C019D6008E8EFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12D63FA326C01AC2008E8EFF /* SwiftCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12D63F9F26C019DA008E8EFF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				12D63FA526C01E2F008E8EFF /* CardListViewModel.swift */,
+				12D63FA926C024D6008E8EFF /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		12D63FA026C019F7008E8EFF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				12D63FA126C01A14008E8EFF /* CardRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12D63F8A26C00443008E8EFF /* ContentView.swift in Sources */,
+				12D63FAC26C04039008E8EFF /* FormView.swift in Sources */,
+				12D63FA626C01E2F008E8EFF /* CardListViewModel.swift in Sources */,
+				12D63F8A26C00443008E8EFF /* CardListView.swift in Sources */,
+				12D63FA426C01AC2008E8EFF /* SwiftCard.swift in Sources */,
+				12D63FA226C01A14008E8EFF /* CardRepository.swift in Sources */,
+				12D63FA826C0236B008E8EFF /* CardView.swift in Sources */,
 				12D63F8826C00443008E8EFF /* SwiftCardsApp.swift in Sources */,
+				12D63FAA26C024D6008E8EFF /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

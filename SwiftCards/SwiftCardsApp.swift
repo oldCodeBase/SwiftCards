@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct SwiftCardsApp: App {
+    init() { FirebaseApp.configure() }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardListView(cardListViewModel: CardListViewModel())
         }
     }
 }
