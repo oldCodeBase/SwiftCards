@@ -8,8 +8,9 @@
 import Combine
 
 final class CardViewModel: ObservableObject, Identifiable {
-    private let cardRepository = CardRepository()
+    
     @Published var swiftCard: SwiftCard
+    private let cardRepository = CardRepository()
     private var cancellables: Set<AnyCancellable> = []
     var id = ""
     

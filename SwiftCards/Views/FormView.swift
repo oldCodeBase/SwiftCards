@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FormView: View {
+    
     @State private var question = ""
     @State private var answer = ""
     var didAddCard: (_ swiftCard: SwiftCard) -> Void

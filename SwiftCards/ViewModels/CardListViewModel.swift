@@ -8,6 +8,7 @@
 import Combine
 
 final class CardListViewModel: ObservableObject {
+    
     @Published var cardRepository = CardRepository()
     @Published var cardsViewModel: [CardViewModel] = []
     private var cancellables: Set<AnyCancellable> = []

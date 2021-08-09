@@ -10,6 +10,7 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 final class CardRepository: ObservableObject {
+    
     @Published var swiftCards: [SwiftCard] = []
     private let store = Firestore.firestore()
     private let path = "SwiftCard"

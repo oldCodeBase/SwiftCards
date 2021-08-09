@@ -70,10 +70,10 @@
 		12D63F8626C00442008E8EFF /* SwiftCards */ = {
 			isa = PBXGroup;
 			children = (
+				12D63F8726C00443008E8EFF /* SwiftCardsApp.swift */,
 				12D63FA026C019F7008E8EFF /* Repository */,
 				12D63F9F26C019DA008E8EFF /* ViewModels */,
 				12D63F9E26C019D6008E8EFF /* Models */,
-				12D63F8726C00443008E8EFF /* SwiftCardsApp.swift */,
 				12D63F9D26C019C9008E8EFF /* Views */,
 				12D63F8B26C00448008E8EFF /* Assets.xcassets */,
 				12D63F9026C00448008E8EFF /* Info.plist */,
