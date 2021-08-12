@@ -1,7 +1,8 @@
 # SwiftCards
 
 Simple swift cards app in SwiftUI.
-**MVVM** architecture in combination with the **Repository pattern** and the **Combine** Framework.
+* **MVVM** architecture in combination with the **Repository pattern** and the **Combine** Framework.
+* **Firebase Firestore** - to store data.
 
 <table border=0>
     <tr>
